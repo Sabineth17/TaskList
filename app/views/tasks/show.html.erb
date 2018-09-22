@@ -1,0 +1,14 @@
+<% if @task.nil? %>
+  <h1> 404 Not found</h1>
+<% else %>
+  <h1><%=@task.name %></h1>
+  <h3> by <%= @book.description %></h3>
+  <p><%= @book.completion_date %> </p>
+<%= link_to "Edit #{@task.name}", edit_task_path(@task.id), method: :edit %>
+
+  <!-- <a href=<%=#"books/#{@book.id}/edit"%>>
+    Edit
+  </a> -->
+  <div></div>
+  <%= link_to "Delete #{@task.title}", task_path(task.id), method: :delete %>
+<% end %>

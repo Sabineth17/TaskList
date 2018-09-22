@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TaskList</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header>
+        <h1>Welcome to Sabine's TaskList!</h1>
+        <nav>
+          <ul>
+            <li>
+              <%= link_to  "Home", "/", id: "home-link" %>
+            </li>
+           <li>
+             <%= link_to "Task Index", tasks_path%>
+           </li>
+           <li>
+             <a href="<%= new_task_path %>">
+               Add a task
+             </a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <%= yield %>
+      </main>
+    </body>
+  </html>

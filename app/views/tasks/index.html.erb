@@ -1,0 +1,18 @@
+<!-- <h1>Tasks#index</h1>
+<p>Find me in app/view/tasks/index.html.erb</p> -->
+
+<!-- #Now we are asking CNN to display how we want to view this data  -->
+
+<h1>Tasks</h1>
+<ul>
+  <% @tasks.each do |task|  %>
+    <li>
+      <!-- <%= task.name %> By: <%= task.description %> And: <%= task.completion_date %> -->
+      <%= "#{task.name.upcase}: #{task.description} by: #{task.completion_date}" %>
+      </li>
+  <% end %>
+</ul>
+
+
+<!-- ######
+I can also do this with string interpolation -->
