@@ -13,18 +13,18 @@
       <header>
         <h1>Welcome to Sabine's TaskList!</h1>
         <nav>
-          <ul>
-            <li>
-              <%= link_to  "Home", "/", id: "home-link" %>
-            </li>
-           <li>
-             <%= link_to "Task Index", tasks_path%>
-           </li>
-           <li>
-             <a href="<%= new_task_path %>">
-               Add a task
-             </a>
-          </ul>
+          <a href="<%= new_task_path%>">
+                       Add a Task
+                     </a>
+
+        <!-- <%# link_to "Add a new Task", '/tasks/new', 'new_task'%> -->
+
+              <!-- <%# link_to  "Home", "/", id: "home-link" %> -->
+             <!-- <%# link_to "Task Index", tasks_path%> -->
+             <!-- <a href="<%# new_task_path %>" -->
+              <!-- Add a task -->
+
+
         </nav>
       </header>
       <main>

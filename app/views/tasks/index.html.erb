@@ -5,10 +5,11 @@
 
 <h1>Tasks</h1>
 <ul>
-  <% @tasks.each do |task|  %>
+  <% @banana.each do |task|  %>
     <li>
       <!-- <%= task.name %> By: <%= task.description %> And: <%= task.completion_date %> -->
-      <%= "#{task.name.upcase}: #{task.description} by: #{task.completion_date}" %>
+      <li><%= link_to "#{task.name.upcase}", task_path(task.id) %></li>
+      <p> <%= ": #{task.description} by: #{task.completion_date}" %> </p>
       </li>
   <% end %>
 </ul>

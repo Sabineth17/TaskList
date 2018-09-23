@@ -839,3 +839,943 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 220ms (Views: 206.2ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 15:22:33 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 59ms (Views: 51.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 15:42:01 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 15:42:39 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 15:48:06 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/:id" for 127.0.0.1 at 2018-09-22 15:48:39 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+Completed 404 Not Found in 21ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=:id):
+  
+app/controllers/tasks_controller.rb:21:in `show'
+Started GET "/tasks/:id" for 127.0.0.1 at 2018-09-22 15:55:27 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </a> -->
+  ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:12: unknown regexp options - dv
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: unterminated string meets end of file
+          end
+             ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/tasks/show.html.erb:12: unknown regexp options - dv
+app/views/tasks/show.html.erb:18: unterminated string meets end of file
+app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 15:55:34 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/:id" for 127.0.0.1 at 2018-09-22 15:55:36 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </a> -->
+  ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:12: unknown regexp options - dv
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: unterminated string meets end of file
+          end
+             ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/tasks/show.html.erb:12: unknown regexp options - dv
+app/views/tasks/show.html.erb:18: unterminated string meets end of file
+app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 15:56:26 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:03:29 -0700
+  
+ArgumentError (Invalid route name, already in use: 'task' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:05:59 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_task_path' for #<#<Class:0x00007f98a2934850>:0x00007f98a292ee78>):
+    21:              <%= link_to "Task Index", tasks_path%>
+    22:            </li>
+    23:            <li>
+    24:              <a href="<%= new_task_path %>">
+    25:                Add a task
+    26:              </a>
+    27:           </ul>
+  
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___333677325529023836_70146719702300'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:08:11 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_task_path' for #<#<Class:0x00007f98a2934850>:0x00007f989fdcfb38>):
+    21:              <!-- <%= link_to "Task Index", tasks_path%> -->
+    22:            </li>
+    23:            <li>
+    24:              <!-- <a href="<%= new_task_path %>">
+    25:                Add a task -->
+    26:              </a>
+    27:           </ul>
+  
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___333677325529023836_70146746901360'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:09:56 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_task_path' for #<#<Class:0x00007f98a2934850>:0x00007f989d7d7980>):
+    21:              <!-- <%= link_to "Task Index", tasks_path%> -->
+    22:            </li>
+    23:            <li>
+    24:              <!-- <a href="<%= new_task_path %>" -->
+    25:               <!-- Add a task -->
+    26:              </a>
+    27:           </ul>
+  
+app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___333677325529023836_70146726994120'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:10:58 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:12:46 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2018-09-22 16:13:34 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </a> -->
+  ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:12: unknown regexp options - dv
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: unterminated string meets end of file
+          end
+             ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/tasks/show.html.erb:12: unknown regexp options - dv
+app/views/tasks/show.html.erb:18: unterminated string meets end of file
+app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/1" for 127.0.0.1 at 2018-09-22 16:16:42 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </a> -->
+  ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:12: unknown regexp options - dv
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:13: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+...output_buffer.safe_append=' -->
+...                               ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: unterminated string meets end of file
+          end
+             ^
+/Users/ada/Documents/RUBY_RAILS/TaskList/app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/tasks/show.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/tasks/show.html.erb:12: unknown regexp options - dv
+app/views/tasks/show.html.erb:13: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+app/views/tasks/show.html.erb:18: unterminated string meets end of file
+app/views/tasks/show.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/1" for 127.0.0.1 at 2018-09-22 16:18:07 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 16:20:36 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2018-09-22 16:20:37 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 18:09:30 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "new_task":String):
+    14:         <h1>Welcome to Sabine's TaskList!</h1>
+    15:         <nav>
+    16: 
+    17:         <%= link_to "Add a new Task", '/tasks/new', 'new_task'%>
+    18: 
+    19:               <!-- <%# link_to  "Home", "/", id: "home-link" %> -->
+    20:              <!-- <%# link_to "Task Index", tasks_path%> -->
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___333677325529023836_70146757795760'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 18:13:47 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "new_task":String):
+    14:         <h1>Welcome to Sabine's TaskList!</h1>
+    15:         <nav>
+    16: 
+    17:         <%= link_to "Add a new Task", '/tasks/new', 'new_task'%>
+    18: 
+    19:               <!-- <%# link_to  "Home", "/", id: "home-link" %> -->
+    20:              <!-- <%# link_to "Task Index", tasks_path%> -->
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___333677325529023836_70146760359880'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 18:13:49 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "new_task":String):
+    14:         <h1>Welcome to Sabine's TaskList!</h1>
+    15:         <nav>
+    16: 
+    17:         <%= link_to "Add a new Task", '/tasks/new', 'new_task'%>
+    18: 
+    19:               <!-- <%# link_to  "Home", "/", id: "home-link" %> -->
+    20:              <!-- <%# link_to "Task Index", tasks_path%> -->
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___333677325529023836_70146747240160'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 18:21:17 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "new_task":String):
+    17:                        Add a Task
+    18:                      </a>
+    19: 
+    20:         <!-- <%= link_to "Add a new Task", '/tasks/new', 'new_task'%> -->
+    21: 
+    22:               <!-- <%# link_to  "Home", "/", id: "home-link" %> -->
+    23:              <!-- <%# link_to "Task Index", tasks_path%> -->
+  
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___333677325529023836_70146759568200'
+Started GET "/tasks/" for 127.0.0.1 at 2018-09-22 18:22:16 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:22:28 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial tasks/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/ada/Documents/RUBY_RAILS/TaskList/app/views"
+):
+    1: <%= render partial: "form",
+    2:       locals: { action_name: 'Create a task',
+    3:                  button_title: 'Create' } %>
+  
+app/views/tasks/new.html.erb:1:in `_app_views_tasks_new_html_erb___4256967044640016432_70146760571600'
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:26:04 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (38.1ms)
+  Rendered tasks/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:26:15 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.3ms)
+  Rendered tasks/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:32:46 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 51ms (Views: 36.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:34:05 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:34:08 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:34:10 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:34:12 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:36:26 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:36:28 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:36:30 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:36:32 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for TasksController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 18:36:43 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 18:42:20 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-22 18:42:21 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:42:24 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.3ms)
+  Rendered tasks/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:25 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"", "description"=>"", "completion_date"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f989fddbc58>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:26 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"", "description"=>"", "completion_date"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f98a107bd40>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:44 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"Self-Care", "description"=>"Mani-Pedicure and Korean Spa", "completion_date"=>"09/30/2018"}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f98a32676e8>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:46 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"Self-Care", "description"=>"Mani-Pedicure and Korean Spa", "completion_date"=>"09/30/2018"}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f98a3149978>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:48 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"Self-Care", "description"=>"Mani-Pedicure and Korean Spa", "completion_date"=>"09/30/2018"}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f989d7dc4f8>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:42:51 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHEgb8e5sviKEY+y+xsrpGdrrykWPnYUqAHQWYz4IieiEP6rLFpv657cbHFOS8PCdDVacwF9erEZWS74tj1WKw==", "task"=>{"name"=>"Self-Care", "description"=>"Mani-Pedicure and Korean Spa", "completion_date"=>"09/30/2018"}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book_params' for #<TasksController:0x00007f989d7468e0>
+Did you mean?  @_params):
+  
+app/controllers/tasks_controller.rb:30:in `create'
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:48:05 -0700
+  
+SyntaxError (/Users/ada/Documents/RUBY_RAILS/TaskList/app/controllers/tasks_controller.rb:48: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/tasks_controller.rb:48: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-22 18:48:35 -0700
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 52ms (Views: 39.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-22 18:48:44 -0700
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQHfE9tJ2Qwq4uX0AbpGjCm+kR9q/PEgxIieON/GW+EHALe8GYegCf33ZQuukRz6tj/a44iivmHCUu/ifaaWUg==", "task"=>{"name"=>"Self-Care", "description"=>"Mani-Pedicure and Korean Spa", "completion_date"=>"09/30/2018"}, "commit"=>"Create"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:32
+  [1m[36mTask Create (1.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "completion_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Self-Care"], ["description", "Mani-Pedicure and Korean Spa"], ["completion_date", "09/30/2018"], ["created_at", "2018-09-23 01:48:44.607195"], ["updated_at", "2018-09-23 01:48:44.607195"]]
+  ↳ app/controllers/tasks_controller.rb:32
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://localhost:3000/
+Completed 200 OK in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-22 18:48:44 -0700
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:8
+  Rendered tasks/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+

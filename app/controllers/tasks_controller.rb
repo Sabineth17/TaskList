@@ -10,15 +10,34 @@
 class TasksController < ApplicationController
   #Asking information for all tasks
   def index
-    @tasks = Task.all
+    @banana = Task.all
     # @tasks = TASK -- this is what we had before creating new instances
   end
 
-# CNN I want to see the details of just one news article
-#whereas as show is showing 1 instance
+  # CNN I want to see the details of just one news article
+  #whereas as show is showing 1 instance
   def show
-    @id = params[:id]
-    @task = Task.find(@id)
+    @id = params[:id].to_i
+    @task = Task.find_by(id: @id)
     #inherited from ApplicationController
-  end 
+  end
+
+  def new
+    @task = Task.new
+  end
+
+
+  def create
+    @task = Task.new(name: params[:task][:name], description: params[:task][:description], completion_date: params[:task][:completion_date]) #instantiate a new book
+    if @task.save # save returns true if the database insert succeeds
+      redirect_to root_path # go to the index so we can see the book in the list
+    else # save failed :(
+      render :new # show the new book form view again
+    end
+  end
+
+
+
+
+
 end

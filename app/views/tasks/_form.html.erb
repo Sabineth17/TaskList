@@ -1,0 +1,19 @@
+<h1> <%= action_name %> </h1>
+<%# form_with url: "/books", method: :post, class: "book-form" do |f|%>
+
+<%= form_with url: "/tasks", method: :post, model: @task, class: "task-form" do |f|%>
+  <p>Please provide the following information to save your task to our database:</p>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :completion_date %>
+  <%= f.text_field :completion_date %>
+
+  <%# f.hidden :creator, value: 'Divya' %>
+
+  <%= f.submit button_title, class: "task-button" %>
+<% end %>
