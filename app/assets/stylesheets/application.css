@@ -12,3 +12,53 @@
  */
  /* = require_tree .
  = require_self */
+
+ h1 {
+   color: salmon;
+ }
+
+h2 {
+   color: indianred;
+}
+
+h3 {
+  color: rosybrown;
+
+}
+
+h4 {
+   color: indianred;
+}
+
+ body {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+
+.button {
+    /* background-color: #4CAF50; */
+      background-color: ;
+    border: none;
+    color: salmon;
+    /* padding: 19px 32px; */
+      padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: bisque;
+    color: indianred;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+}
+
+.button1:hover {background-color: #e7e7e7;}

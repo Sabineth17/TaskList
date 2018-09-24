@@ -3,7 +3,12 @@
 
 <!-- #Now we are asking CNN to display how we want to view this data  -->
 
-<h1>Tasks</h1>
+<h2>This week's tasks list</h2>
+
+<!-- <h4><a href="<%= new_task_path%>">
+             Add a Task
+           </a></h4> -->
+
 <ul>
   <% @banana.each do |task|  %>
       <!-- <%= task.name %> By: <%= task.description %> And: <%= task.completion_date %> -->
@@ -11,6 +16,14 @@
       <p> <%= "#{task.description}. To be completed by: #{task.completion_date}" %> </p>
   <% end %>
 </ul>
+
+<!-- <h4><a href="<%= new_task_path%>">
+             Add a Task
+           </a></h4> -->
+
+           <h4><a href="<%= new_task_path%>" class = "button button1">
+                        Add a Task
+                      </a></h4>
 
 
 <!-- ######
