@@ -1,0 +1,5 @@
+<%= render partial: "form",
+      locals: {action_name: 'Update a task',
+                 button_title: 'Update',
+                 method_variable: :patch,
+                 url: update_task_path(id: @task.id)} %>

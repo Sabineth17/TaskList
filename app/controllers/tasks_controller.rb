@@ -8,6 +8,7 @@
 # 2 separate actions in this controller index and show:
 #index: show me all of the things...show me all of the TASKS
 class TasksController < ApplicationController
+
   #Asking information for all tasks
   def index
     @banana = Task.all
@@ -36,6 +37,18 @@ class TasksController < ApplicationController
     end
   end
 
+  def edit
+    @task = Task.find_by(id: params[:id].to_i)
+  end
+
+
+  def update
+      @task = Task.find_by(id: params[:id].to_i)
+      @task.update(name: params[:task][:name],
+      description: params[:task][:description],
+      completion_date: params[:task][:completion_date])
+      redirect_to task_path(@task.id)
+  end
 
 
 

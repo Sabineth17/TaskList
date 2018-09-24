@@ -4,10 +4,10 @@
   <h1><%=@task.name %></h1>
   <h3> by <%= @task.description %></h3>
   <p><%= @task.completion_date %> </p>
-<!-- <%# link_to "Edit #{@task.name}", edit_task_path(@task.id), method: :edit %>
+ <%= link_to "Edit #{@task.name}", edit_task_path(@task.id) %>
 
-  <!- <a href<%#"books/#{@book.id}/edit"%>>
-    Edit
+   <!-- <a href<%#"books/#{@book.id}/edit"%>> -->
+    <!-- Edit
   </a> -->
   <!-- <div></div>
   <%# link_to "Delete #{@task.title}", task_path(task.id), method: :delete %> -->
